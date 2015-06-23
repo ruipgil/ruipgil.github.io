@@ -1,0 +1,16 @@
+# Site settings
+title: Rui Gil
+description: > 
+  Rui Gil's personal blog.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username: ruipgil
+github_username:  ruipgil
+
+# Build settings
+markdown: redcarpet
+highlighter: pygments
+
+kramdown:
+  input: GFM
+  syntax_highlighter: Pygments
