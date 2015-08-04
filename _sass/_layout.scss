@@ -21,6 +21,14 @@
     &:visited {
         color: $grey-color-dark;
     }
+    /*
+    &:visited {
+        color: $grey-color-light !important;
+    }
+    &:hover {
+        color: $grey-color-dark !important;
+    }
+    */
 }
 
 .site-nav {
@@ -92,7 +100,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    //border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
@@ -179,6 +187,8 @@
 }
 
 .post-meta {
+    text-align: $date-align;
+    margin-top: $date-margin-top;
     font-size: $small-font-size;
     color: $grey-color;
 }
@@ -194,6 +204,7 @@
  * Posts
  */
 .post-header {
+    margin-top: $post-margin-top;
     margin-bottom: $spacing-unit;
 }
 

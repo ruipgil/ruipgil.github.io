@@ -5,7 +5,11 @@
 
   <body>
 
-    {% include header.html %}
+    {% if page.path contains '_posts' %}
+      {% include postHeader.html %}
+    {% else %}
+      {% include header.html %}
+    {% endif %}
 
     <div class="page-content">
       <div class="wrapper">

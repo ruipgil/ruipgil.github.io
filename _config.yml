@@ -4,12 +4,16 @@ description: >
   Rui Gil's personal blog.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
+email: "ruipgil@gmail.com"
 twitter_username: ruipgil
 github_username:  ruipgil
 
 # Build settings
 markdown: redcarpet
 highlighter: pygments
+
+redcarpet:
+  extensions: ["strikethrough"]
 
 kramdown:
   input: GFM
