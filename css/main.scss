@@ -91,7 +91,7 @@ $on-laptop:        800px;
     0px 1px 0px rgb(232, 232, 232);
 }
 .home-header {
-  margin-top: 15%;
+  margin-top: $post-margin-top;
   text-align: center;
 }
 .home-header h1 {
