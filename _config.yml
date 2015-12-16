@@ -1,9 +1,10 @@
 # Site settings
 title: Rui Gil
-description: > 
-  Rui Gil's personal blog.
+description: >
+  Computer Engineer, singer-songwriter, and occasional writer
+long_title: Rui Gil's personal blog
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "http://ruipgil.com" # the base hostname & protocol for your site
 email: "ruipgil@gmail.com"
 twitter_username: ruipgil
 github_username:  ruipgil

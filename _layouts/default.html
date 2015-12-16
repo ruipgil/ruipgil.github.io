@@ -4,12 +4,7 @@
   {% include head.html %}
 
   <body>
-
-    {% if page.path contains '_posts' %}
-      {% include postHeader.html %}
-    {% else %}
-      {% include header.html %}
-    {% endif %}
+    {% include postHeader.html %}
 
     <div class="page-content">
       <div class="wrapper">
@@ -18,7 +13,6 @@
     </div>
 
     {% include footer.html %}
-
   </body>
 
 </html>

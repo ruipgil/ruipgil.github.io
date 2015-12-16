@@ -1,0 +1,30 @@
+---
+title: Rui Gil personal blog
+---
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="home-header">
+      <h1>
+        {{ site.title }}
+      </h1>
+      <div class="personal-description">
+        {{ site.description }}
+      </div>
+      {% include contact.html %}
+    </div>
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+  </body>
+
+</html>

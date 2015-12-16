@@ -1,0 +1,33 @@
+<div class="social-media-area">
+  <ul class="social-media-list">
+    <li>
+    <a href="" id="mail-icon">
+      <script type="text/javascript">
+        document.querySelector('#mail-icon').href = 'mailto:{{ site.email }}';
+      </script>
+      <span class="icon icon--mail">
+        {% include mail.svg %}
+      </span>
+    </a>
+    </li>
+    {% if site.github_username %}
+    <li>
+    <a href="https://github.com/{{ site.github_username }}">
+      <span class="icon  icon--github">
+        {% include github.svg %}
+      </span>
+    </a>
+    </li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+    <li>
+    <a href="https://twitter.com/{{ site.twitter_username }}">
+      <span class="icon  icon--twitter">
+        {% include twitter.svg %}
+      </span>
+    </a>
+    </li>
+    {% endif %}
+  </ul>
+</div>
