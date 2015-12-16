@@ -5,7 +5,7 @@
       <script type="text/javascript">
         document.querySelector('#mail-icon').href = 'mailto:{{ site.email }}';
       </script>
-      <span class="icon icon--mail">
+      <span class="icon">
         {% include mail.svg %}
       </span>
     </a>
@@ -13,7 +13,7 @@
     {% if site.github_username %}
     <li>
     <a href="https://github.com/{{ site.github_username }}">
-      <span class="icon  icon--github">
+      <span class="icon">
         {% include github.svg %}
       </span>
     </a>
@@ -23,7 +23,7 @@
     {% if site.twitter_username %}
     <li>
     <a href="https://twitter.com/{{ site.twitter_username }}">
-      <span class="icon  icon--twitter">
+      <span class="icon">
         {% include twitter.svg %}
       </span>
     </a>
