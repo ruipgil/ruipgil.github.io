@@ -11,6 +11,19 @@ layout: default
     {{ content }}
   </article>
 
-  <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
+  <p class="post-meta">
+    {{ page.date | date: "%b " }}
+    {% assign d = page.date | date: "%-d" %}
+    {% case d %}
+      {% when "1" or "21" or "31" %}{{ d }}st
+      {% when "2" or "22" %}{{ d }}nd
+      {% when "3" or "23" %}{{ d }}rd
+      {% else %}{{ d }}th
+    {% endcase %}
+    {{ page.date | date: ", %Y" }}
+  </p>
+  {% if page.discussion %}
+  <p class="post-discussion"><a href="{{ page.discussion }}">Discuss on {{ page.discussion_site }}</a></p>
+  {% endif %}
 
 </div>

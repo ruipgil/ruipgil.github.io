@@ -113,6 +113,12 @@ $on-laptop:        800px;
   margin-right: 0;
 }
 
+.post-discussion {
+  font-size: 0.9rem;
+  font-family: Monospace;
+  text-align: right;
+}
+
 // Using media queries with like this:
 // @include media-query($on-palm) {
 //     .wrapper {
