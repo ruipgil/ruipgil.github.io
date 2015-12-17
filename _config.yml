@@ -2,7 +2,7 @@
 title: Rui Gil
 description: >
   Computer Engineer, singer-songwriter, and occasional writer
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://ruipgil.com" # the base hostname & protocol for your site
 email: "ruipgil@gmail.com"
 twitter_username: ruipgil
