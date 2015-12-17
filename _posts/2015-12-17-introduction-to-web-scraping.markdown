@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An introduction to web scraping
+title: Introduction to web scraping
 ---
 
 > **scrape** | verb | \ˈskrāp\
