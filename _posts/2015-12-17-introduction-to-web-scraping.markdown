@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Introduction to web scraping
+discussion: "https://news.ycombinator.com/item?id=10755576"
+discussion_site: Hacker News
 ---
 
 > **scrape** | verb | \ˈskrāp\
