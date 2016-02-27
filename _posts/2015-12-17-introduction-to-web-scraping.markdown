@@ -263,7 +263,7 @@ scraperjs
   .StaticScraper.create()
   .get({
     url: '{{ site.url }}{{ site.baseurl }}{{ page.url }}',
-    header: {
+    headers: {
       'User-Agent': 'Collecting data to project XXX;mail@gmail.com'
     }
   })
