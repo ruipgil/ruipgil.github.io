@@ -79,30 +79,63 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+.work-list {
+  @extend .post-list;
+
+  .work-link {
+    font-size: 24px; // TOFIX: should be a variable, or extend
+    display: inline-block;
+  }
+
+  .work-meta {
+    @extend .post-meta;
+  }
+  .work-link-desc {
+    font-size: 0.4rem;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
 .contact-wrapper {
   margin-top: 5%;
 }
 
-.home-header h1 {
-  color: #666;
-  font-weight: bold;
-  text-shadow:
-    0px -1px 0px rgb(0, 0, 0),
-    0px 1px 0px rgb(232, 232, 232);
-}
 .home-header {
   margin-top: $post-margin-top;
   text-align: center;
+
+  h1 {
+    color: #666;
+    font-weight: bold;
+    text-shadow:
+    0px -1px 0px rgb(0, 0, 0),
+    0px 1px 0px rgb(232, 232, 232);
+    font-size: 4em;
+
+    a {
+      color: #666;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
 }
-.home-header h1 {
-  font-size: 4em;
-}
+
 .personal-description {
   font-size: 1em;
 }
 
 .social-media-list li {
   margin-right: 4px;
+  a {
+    color: #999;
+  }
+  a:hover {
+    color: #888;
+  }
 }
 
 .icon--mail {
@@ -117,6 +150,14 @@ $on-laptop:        800px;
   font-size: 0.9rem;
   font-family: Monospace;
   text-align: right;
+}
+
+.home {
+  ul {
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid rgba(128, 128, 128, 0.12);
+  }
 }
 
 // Using media queries with like this:
@@ -134,9 +175,14 @@ $on-laptop:        800px;
 
 
 
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
         "syntax-highlighting"
 ;
+
+pre, code {
+  background-color: none;
+}

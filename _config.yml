@@ -7,15 +7,14 @@ url: "http://ruipgil.com" # the base hostname & protocol for your site
 email: "ruipgil@gmail.com"
 twitter_username: ruipgil
 github_username:  ruipgil
+instagram_username:  ruipgil
 ga: UA-54125554-4
 
 # Build settings
-markdown: redcarpet
-highlighter: pygments
-
-redcarpet:
-  extensions: ["strikethrough"]
+markdown: kramdown
+highlighter: rouge
 
 kramdown:
-  input: GFM
-  syntax_highlighter: Pygments
+  input:          GFM
+  syntax_highlighter: rouge
+

@@ -5,17 +5,13 @@
       <script type="text/javascript">
         document.querySelector('#mail-icon').href = 'mailto:{{ site.email }}';
       </script>
-      <span class="icon icon--mail">
-        {% include mail.svg %}
-      </span>
+      <span class="icon fa fa-envelope"></span>
     </a>
     </li>
     {% if site.github_username %}
     <li>
     <a href="https://github.com/{{ site.github_username }}">
-      <span class="icon">
-        {% include github.svg %}
-      </span>
+      <span class="icon fa fa-github"></span>
     </a>
     </li>
     {% endif %}
@@ -23,11 +19,19 @@
     {% if site.twitter_username %}
     <li>
     <a href="https://twitter.com/{{ site.twitter_username }}">
-      <span class="icon">
-        {% include twitter.svg %}
-      </span>
+      <span class="icon fa fa-twitter"></span>
+    </a>
+    </li>
+    {% endif %}
+
+    {% if site.instagram_username %}
+    <li>
+    <a href="https://instagram.com/{{ site.instagram_username }}">
+      <span class="icon fa fa-instagram"></span>
     </a>
     </li>
     {% endif %}
   </ul>
+
+  <script src="https://use.fontawesome.com/3340303600.js"></script>
 </div>
